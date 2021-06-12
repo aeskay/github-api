@@ -1,0 +1,246 @@
+body{
+    box-sizing: border-box;
+}
+
+.menu-items{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.menu-items li{
+    display: inline-block;
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+
+.logo-name div{
+    margin: 0px 5px;
+}
+
+.form-control-input{
+    background-color: transparent;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    color: rgb(197, 197, 197);
+    animation-name: form-anim;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes form-anim {
+    0%{border-color: rgb(224, 224, 224);}
+    50%{border-color: rgb(88, 88, 88);}
+    100%{border-color: rgb(224, 224, 224);}
+}
+
+.logo{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.search-icon{
+    color: rgb(88, 88, 88);
+    position: relative;
+    left: -30px;
+    top: -1px;
+    font-size: 15px;
+    background-color: transparent;
+    border:none
+}
+
+.fa-slash{
+    transform: rotate(90deg);
+    border: 1px solid rgb(88, 88, 88);
+    padding: 2px;
+    border-radius: 2px;
+    animation-name: form-anim;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.account-icons span{
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.avatar{
+    margin-top: -3px;
+}
+
+.account-icons{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.parentDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+/* .navbar div{
+    display: flex;
+    justify-content: end;
+} */
+.yo{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width:900px) {
+    .parentDiv{
+        display: flex;
+        width: 100%;
+    }
+    .navigation{
+        display: block;
+    }
+    .menu-items{
+        display: none;
+        margin-left: -30px;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+}
+
+.tab-item.active{
+    border: none;
+    border-bottom: 2px solid red !important;
+    font-weight: bold;
+}
+
+.tab-item{
+    margin: 0px 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.text-left{
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.portfolio{
+    text-align: left;
+    margin-left: 10%;
+}
+
+@media(min-width: 1000px){
+    .portfolio{
+        text-align: left;
+        margin-left: 30%;
+    }
+}
+
+.text-left h5{
+    font-weight: bold;
+}
+
+.text-left p{
+    color: rgb(107, 107, 107);
+}
+
+.text-left span{
+    font-weight: 500;
+}
+
+.find-rep{
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 3px;
+    color: white;
+}
+
+.find-rep::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.icon{
+    
+}
+
+.star-btn{
+    border: 1px solid rgb(214, 214, 214);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.name-star{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.name-star h6{
+    font-weight: bold;
+    color: rgb(0, 110, 255)
+}
+
+.details span{
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.details{
+    margin-left: -10px;
+}
+
+.user-image{
+    border-radius: 50%;
+}
+
+.main-body{
+    display: none;
+}
+
+.parent-div-element{
+    margin: 15%;
+}
+
+.form-input-2{
+    height: 100%;
+    padding: 7.5px 0px;
+    outline: none;
+}
+
+.form-input-2:focus{
+    border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 10px;
+}
+
+.form-input-2::placeholder{
+    padding-left: 10px;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+    transition: ease-in 300ms;
+}
+.btn-black:hover{
+    background-color: rgb(82, 82, 82);
+    color: white
+}
+
+.find-rep:focus, .find-rep::placeholder{
+    color:black;
+    padding: 5px;
+}
