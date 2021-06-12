@@ -17,6 +17,9 @@ const searchIcon = document.querySelector('.search-icon'),
     avatar = document.querySelector('.avatar'),
     divElement = document.querySelector('.parent-div-element'),
     findRepo = document.querySelector('.find-rep'),
+    numFilter = document.querySelector('.numfilt'),
+    filterP = document.querySelector('.filterP'),
+    repoCount = document.querySelector('.repo-count'),
     repos = document.querySelector('.repos');
 
 async function getUser(input) {
@@ -56,7 +59,7 @@ async function getRepo(input) {
     repoResult = result;
     if(result){
         var num = 20;
-        
+        repoCount.innerText = result.length;
         const resultSlice = result.slice(0,num)
         console.log(resultSlice)
 
@@ -111,15 +114,11 @@ function filterRepo(repo) {
     if(repoResult){
         
         const findThis = repoResult.filter(item => item.name.includes(repo))
-
+        numFilter.innerText = findThis.length;
+        filterP.style.display = "block"
         const resMap = findThis.map(item => {
             const date = new Date(item.created_at);
             const dateForm = date.toDateString().substring(0,15);
-            if(item.language=="JavaScript"){
-                icon.style.color = 'yellow'
-            } else {
-
-            }
             return `<div>
                     <hr style="width: 97%;"/>
                     <div class="name-star pt-4">
